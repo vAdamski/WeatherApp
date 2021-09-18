@@ -5,4 +5,4 @@ Im used a Hangfire NuGet for downloading / updating wather data from https://www
 
 Data are storage in txt files and readed from them when request with city name is send
 
-Get reqest have construction: https://localhost:port/api/Weather?city=cityName
+Get reqest have got construction: https://localhost:port/api/Weather?city=cityName
