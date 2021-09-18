@@ -1,6 +1,8 @@
 # WeatherApp
 Simple application to download weather data from server to local files and serve them via api
 
+![image](https://user-images.githubusercontent.com/64928495/133869240-d1fde8bf-11bb-4e8b-b1e1-98b54f381e2b.png)
+
 Im used a Hangfire NuGet for downloading / updating wather data from https://www.worldweatheronline.com/developer/
 
 Data are storage in txt files and readed from them when request with city name is send
