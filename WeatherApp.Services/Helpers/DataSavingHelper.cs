@@ -32,7 +32,7 @@ namespace WeatherApp.Services
             {
                 if (!String.IsNullOrEmpty(str))
                 {
-                    File.WriteAllText($"../weatherData_{cityName}.txt", str);
+                    File.WriteAllText($"../Data/weatherData_{cityName}.txt", str);
                     return true;
                 }
 

@@ -73,6 +73,10 @@ namespace WeatherApp
 
             app.UseHangfireDashboard();
 
+            //Initial data when server is starting
+            backgroundJobClient.Enqueue(() => serviceProvider.GetService<IDownloadWeather>().DownloadWeatherData());
+
+            //Downloading data every time you want
             recurringJobManager.AddOrUpdate(
                 "Download weather data",
                 () => serviceProvider.GetService<IDownloadWeather>().DownloadWeatherData(),

@@ -29,7 +29,7 @@ namespace WeatherApp.Controllers
                     return NotFound();
                 }
 
-                var data = await _readFileData.ReadDataFromFileAsync($"../weatherData_{city}.txt");
+                var data = await _readFileData.ReadDataFromFileAsync($"../Data/weatherData_{city}.txt");
 
                 if (string.IsNullOrWhiteSpace(data))
                 {
